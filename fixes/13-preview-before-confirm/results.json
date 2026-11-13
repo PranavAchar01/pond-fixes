@@ -1,0 +1,59 @@
+{
+  "source": "data/build-session (my build on 2026-11-12): timeline.json, ws_*.out, report.json",
+  "today": {
+    "confirmed_at_s": 173,
+    "first_verdict_at_s": 1180,
+    "first_verdict": "failed, 0 posts: Reddit watch run still in progress after 16 minutes; web search found 2 posts, none in scope. Empty digest delivered.",
+    "minutes_from_confirm_to_verdict": 16.78
+  },
+  "with_preview": {
+    "preview_seconds_sequential": 4.6,
+    "preview_seconds_parallel": 2.1,
+    "verdict_at_s_sequential": 177.6,
+    "verdict": "0 in scope of 2 found across 4 sources",
+    "ready": false,
+    "steps": [
+      {
+        "step": "read-posts:reddit",
+        "status": "empty",
+        "found": 0,
+        "in_scope": 0,
+        "seconds": 1.2,
+        "why": []
+      },
+      {
+        "step": "read-posts:hn",
+        "status": "empty",
+        "found": 0,
+        "in_scope": 0,
+        "seconds": 1.1,
+        "why": []
+      },
+      {
+        "step": "read-posts:reddit-2",
+        "status": "out_of_scope",
+        "found": 2,
+        "in_scope": 0,
+        "seconds": 0.2,
+        "why": [
+          "outside the four subreddits (r/datasciencecareers)",
+          "outside the four subreddits (r/MachineLearningJobs)"
+        ]
+      },
+      {
+        "step": "read-posts:hn-2",
+        "status": "empty",
+        "found": 0,
+        "in_scope": 0,
+        "seconds": 2.1,
+        "why": []
+      }
+    ]
+  },
+  "brief_to_first_verdict_s": {
+    "before": 1180,
+    "after": 177.6
+  },
+  "reduction": 0.849,
+  "formula": "after = confirm time (173 s) + sum of the captured search times; before = time the failed test report arrived"
+}

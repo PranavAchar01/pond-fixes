@@ -18,10 +18,16 @@ I spent 2026-11-12 building a workflow on Pond through the MCP server, and wrote
 | 10 | [Updates feed hook](fixes/10-updates-feed/README.md) | Publishing writes a feed entry atomically | feed entries 0 -> 21 | S |
 | 11 | [Confirm transaction](fixes/11-confirm-transaction/README.md) | One-UPDATE confirm with a revision guard | stale fields after confirm 2 -> 0 | S |
 | 12 | [Watch model](fixes/12-watch-model/README.md) | Multi-source watches, kept alive while live | watches for my digest 5 -> 1; manual extends 260/yr -> 0 | M |
+| 13 | [Preview before confirm](fixes/13-preview-before-confirm/README.md) | Every source runs once on a sample before confirm; confirm needs a result or a reason | brief to first verdict 19 min 40 s -> 2 min 58 s | M |
 
 ## Total impact
 
-All figures come from `bench/impact.json`, which `bench/impact.py` builds from each fix's results file.
+With every fix applied to the build I did (`bench/session.json`, built by `bench/session_total.py`):
+
+- Time from sending the brief to knowing whether the workflow works: 19 min 40 s -> 2 min 58 s, 85% less (fix 13; one observed build).
+- Data an agent loads to build and check one workflow: 581,242 -> 388,395 bytes, 33% less. For clients that also load outputSchema: 179,938 bytes, 69% less. About 145,000 -> 97,000 tokens (ESTIMATE: bytes / 4). This counts the tools/list result plus every response body in my build, with fixes 05 and 06 applied, and fix 06's signed URL also used for `pond_workflow_get`.
+
+Per fix, from `bench/impact.json`, which `bench/impact.py` builds from each fix's results file:
 
 - Tokens saved per session: about 6,175 for every client, from moving description procedures into a skill. Up to about 58,289 for clients that also load outputSchema. ESTIMATE: tools/list compact JSON chars / 4, before minus after.
 - Tokens saved per workflow build: about 33,179 per export (ESTIMATE: bytes / 4; base64 likely tokenizes worse). My build exported once.
@@ -44,6 +50,8 @@ uv run python fixes/06-export-by-url/export_shape.py
 uv run python fixes/07-landing-weight/head_check.py
 uv run python fixes/08-soft-404/check_404.py
 uv run python bench/impact.py
+uv run python fixes/13-preview-before-confirm/replay.py
+uv run python bench/session_total.py
 ```
 
 `tools/pond_client.py` is a small MCP client. It reads `POND_API_KEY` from the environment first and falls back to the keychain. The key is never printed or written to disk. The TypeScript pieces (`worker.ts`, `lazy-track.ts`) need Node 23.6 or newer to run their tests. pytest runs them when `node` is on the PATH.

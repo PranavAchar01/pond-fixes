@@ -1,0 +1,60 @@
+{
+  "source": "data/build-session, data/export.out, fixes/05, 06 and 13 results.json",
+  "bytes_loaded_per_build": {
+    "before": 581242,
+    "after": 388395,
+    "after_for_clients_that_load_outputSchema": 179938,
+    "reduction": 0.332,
+    "reduction_outputSchema_clients": 0.69,
+    "by_call_before": {
+      "tools/list": 358793,
+      "confirm.out": 4541,
+      "get.out": 39698,
+      "list_runs.out": 2720,
+      "scrape_start.out": 296,
+      "scrapers.out": 20028,
+      "start.out": 4680,
+      "status.out": 367,
+      "step1.out": 4284,
+      "step2.out": 4542,
+      "ws_h2.out": 93,
+      "ws_hn.out": 93,
+      "ws_r2.out": 788,
+      "ws_reddit.out": 93,
+      "export.out": 140226
+    },
+    "by_call_after": {
+      "tools/list": 334094,
+      "confirm.out": 4541,
+      "get.out": 4266,
+      "list_runs.out": 2720,
+      "scrape_start.out": 296,
+      "scrapers.out": 20028,
+      "start.out": 4680,
+      "status.out": 367,
+      "step1.out": 4284,
+      "step2.out": 4542,
+      "ws_h2.out": 93,
+      "ws_hn.out": 93,
+      "ws_r2.out": 788,
+      "ws_reddit.out": 93,
+      "export.out": 7510
+    }
+  },
+  "estimated_tokens_per_build": {
+    "before": 145310,
+    "after": 97098,
+    "after_outputSchema_clients": 44984,
+    "formula": "ESTIMATE: bytes / 4"
+  },
+  "brief_to_first_verdict_s": {
+    "before": 1180,
+    "after": 177.6
+  },
+  "wait_reduction": 0.849,
+  "notes": [
+    "Bytes are JSON response bodies the agent reads during the build, plus the tools/list result it loads at the start.",
+    "get.out after = the same response without pas_files, plus about 200 bytes for a signed URL.",
+    "Wait times come from one build, so treat them as one observed case, not an average."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+ "t0_unix": 1794523678,
+ "note": "Seconds after I sent the brief, from file write times during the build on 2026-11-12. Each .out file was written when its call returned.",
+ "events": {
+  "start": 25,
+  "step1": 112,
+  "step2": 154,
+  "get": 163,
+  "confirm": 173,
+  "export": 174,
+  "scrape_start": 191,
+  "status": 1154,
+  "report": 1180
+ }
+}
