@@ -1,0 +1,55 @@
+{
+  "measured_at": "2026-11-13T00:21:45+00:00",
+  "base": "https://joinpond.ai",
+  "rows": [
+    {
+      "path": "/docs",
+      "status": 200,
+      "body_bytes": 9350,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/pricing",
+      "status": 200,
+      "body_bytes": 9350,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/catalog",
+      "status": 200,
+      "body_bytes": 9350,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/help",
+      "status": 200,
+      "body_bytes": 9350,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/marketplace",
+      "status": 200,
+      "body_bytes": 9350,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/changelog",
+      "status": 200,
+      "body_bytes": 9350,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/status",
+      "status": 200,
+      "body_bytes": 9350,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/this-page-does-not-exist-404-check",
+      "status": 200,
+      "body_bytes": 9350,
+      "content_type": "text/html; charset=utf-8"
+    }
+  ],
+  "soft_404_count": 8
+}

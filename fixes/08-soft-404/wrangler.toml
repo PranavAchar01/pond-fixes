@@ -1,0 +1,10 @@
+# Worker runs before static assets so it can set the status code.
+name = "joinpond-web"
+main = "worker.ts"
+compatibility_date = "2026-11-01"
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+not_found_handling = "none"   # "single-page-application" would answer 200 for every path
+run_worker_first = true

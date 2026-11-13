@@ -1,0 +1,71 @@
+{
+  "measured_at": "2026-11-13T00:24:51+00:00",
+  "cases": [
+    {
+      "tool": "pas_capabilities",
+      "arguments": {},
+      "server_response": {
+        "isError": true,
+        "text": "{\"profileVersion\":\"1.0\",\"requestId\":\"\",\"error\":{\"code\":\"PAS_INVALID_REQUEST\",\"message\":\"Tool arguments do not match the input schema.\",\"retryable\":false,\"details\":{\"category\":\"validation\",\"commitState\":\"not_committed\",\"diagnosticReference\":\"diag-82a5b45bc9da83d5128490c3\",\"nextAction\":\"correct_request_and_retry\",\"operation\":\"pas_capabilities\",\"path\":\"/\",\"reasonCode\":\"request_schema_invalid\",\"recovery\":{\"argumentSource\":\"bounded_correction_guidance\",\"executable\":false,\"maxAutomaticAttempts\":0,\"mode\":\"correct_request_then_retry\",\"requestIdPolicy\":\"generate_new\",\"reuseIdempotencyKey\":false,\"reuseReporterRunReference\":false,\"reuseRequestId\":false,\"safeToRetry\":false,\"sameArguments\":false,\"statusCheckRequired\":false,\"userActionRequired\":true},\"serverRequestId\":\"4f8f1e7b-b4dd-4d84-9adb-df5f5e365b6f\",\"stage\":\"request_validation\",\"validationReason\":\"schema_required\"}}}"
+      },
+      "fixed_response": [
+        {
+          "path": "/requestId",
+          "message": "requestId is required (string, 1-200 chars)"
+        }
+      ]
+    },
+    {
+      "tool": "pas_catalog_search",
+      "arguments": {
+        "requestId": "r",
+        "limit": 500
+      },
+      "server_response": {
+        "isError": true,
+        "text": "{\"profileVersion\":\"1.0\",\"requestId\":\"r\",\"error\":{\"code\":\"PAS_INVALID_REQUEST\",\"message\":\"Tool arguments do not match the input schema.\",\"retryable\":false,\"details\":{\"category\":\"validation\",\"commitState\":\"not_committed\",\"diagnosticReference\":\"diag-16aa5b5dc95b05066fd6838f\",\"nextAction\":\"correct_request_and_retry\",\"operation\":\"pas_catalog_search\",\"path\":\"/limit\",\"reasonCode\":\"request_schema_invalid\",\"recovery\":{\"argumentSource\":\"bounded_correction_guidance\",\"executable\":false,\"maxAutomaticAttempts\":0,\"mode\":\"correct_request_then_retry\",\"requestIdPolicy\":\"generate_new\",\"reuseIdempotencyKey\":false,\"reuseReporterRunReference\":false,\"reuseRequestId\":false,\"safeToRetry\":false,\"sameArguments\":false,\"statusCheckRequired\":false,\"userActionRequired\":true},\"serverRequestId\":\"614fc941-d0b3-4684-a692-fb8b7c24e5a3\",\"stage\":\"request_validation\",\"validationReason\":\"schema_maximum\"}}}"
+      },
+      "fixed_response": [
+        {
+          "path": "/limit",
+          "message": "limit must be integer, 1-100; got 500"
+        }
+      ]
+    },
+    {
+      "tool": "pas_catalog_search",
+      "arguments": {
+        "requestId": "r",
+        "q": "investors"
+      },
+      "server_response": {
+        "isError": true,
+        "text": "{\"profileVersion\":\"1.0\",\"requestId\":\"r\",\"error\":{\"code\":\"PAS_INVALID_REQUEST\",\"message\":\"Tool arguments do not match the input schema.\",\"retryable\":false,\"details\":{\"category\":\"validation\",\"commitState\":\"not_committed\",\"diagnosticReference\":\"diag-1830af32ba4ac3f992e4e726\",\"nextAction\":\"correct_request_and_retry\",\"operation\":\"pas_catalog_search\",\"path\":\"/\",\"reasonCode\":\"request_schema_invalid\",\"recovery\":{\"argumentSource\":\"bounded_correction_guidance\",\"executable\":false,\"maxAutomaticAttempts\":0,\"mode\":\"correct_request_then_retry\",\"requestIdPolicy\":\"generate_new\",\"reuseIdempotencyKey\":false,\"reuseReporterRunReference\":false,\"reuseRequestId\":false,\"safeToRetry\":false,\"sameArguments\":false,\"statusCheckRequired\":false,\"userActionRequired\":true},\"serverRequestId\":\"8d615322-6cbf-45e7-abdf-6142d7f7327a\",\"stage\":\"request_validation\",\"validationReason\":\"schema_additionalProperties\"}}}"
+      },
+      "fixed_response": [
+        {
+          "path": "/q",
+          "message": "q is not a known field; allowed: cursor, filters, limit, query, requestId"
+        }
+      ]
+    },
+    {
+      "tool": "pond_recent_updates",
+      "arguments": {
+        "kinds": [
+          "news"
+        ]
+      },
+      "server_response": {
+        "isError": true,
+        "text": "{\"code\":\"invalid_argument\",\"message\":\"Tool arguments do not match the input schema.\",\"details\":{}}"
+      },
+      "fixed_response": [
+        {
+          "path": "/kinds/0",
+          "message": "kinds[0] must be one of \"pas_update\", \"dataset_update\", \"customer_story\", \"official_announcement\"; got \"news\""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+[project]
+name = "pond-fixes"
+version = "0.1.0"
+description = "Runnable fixes and measurements for Pond backend issues"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "brotli>=1.1",
+    "jsonschema>=4.26.0",
+]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["fixes", "tests"]
+pythonpath = ["."]
+addopts = "--import-mode=importlib"
+
+[tool.uv]
+package = false

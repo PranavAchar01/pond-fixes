@@ -1,0 +1,390 @@
+{
+  "measured_at": "2026-11-13T00:25:23+00:00",
+  "summary": {
+    "n_queries": 20,
+    "k": 3,
+    "live": {
+      "hits": 7,
+      "rate": 0.35
+    },
+    "bm25": {
+      "hits": 19,
+      "rate": 0.95
+    },
+    "bm25_synonyms": {
+      "hits": 20,
+      "rate": 1.0
+    },
+    "live_zero_results": 13
+  },
+  "rows": [
+    {
+      "query": "find investors for my seed round",
+      "relevant": [
+        "investor-match"
+      ],
+      "bm25": [
+        "investor-match",
+        "executive-contact-finder",
+        "pond-lead-finder"
+      ],
+      "bm25_synonyms": [
+        "investor-match",
+        "executive-contact-finder",
+        "pond-lead-finder"
+      ],
+      "live": [
+        "investor-match"
+      ],
+      "live_error": null
+    },
+    {
+      "query": "investors",
+      "relevant": [
+        "investor-match"
+      ],
+      "bm25": [
+        "investor-match"
+      ],
+      "bm25_synonyms": [
+        "investor-match"
+      ],
+      "live": [
+        "investor-match",
+        "ai-hiring-at-targets",
+        "yc-new-founder-early-finder"
+      ],
+      "live_error": null
+    },
+    {
+      "query": "who should I pitch for my startup fundraise",
+      "relevant": [
+        "investor-match"
+      ],
+      "bm25": [
+        "executive-contact-finder",
+        "investor-match",
+        "partner-overlap"
+      ],
+      "bm25_synonyms": [
+        "investor-match",
+        "executive-contact-finder",
+        "partner-overlap"
+      ],
+      "live": [],
+      "live_error": null
+    },
+    {
+      "query": "battlecard",
+      "relevant": [
+        "competitor-battlecards"
+      ],
+      "bm25": [
+        "competitor-battlecards"
+      ],
+      "bm25_synonyms": [
+        "competitor-battlecards"
+      ],
+      "live": [
+        "competitor-battlecards"
+      ],
+      "live_error": null
+    },
+    {
+      "query": "what do customers complain about in my competitor's reviews",
+      "relevant": [
+        "competitor-review-themes"
+      ],
+      "bm25": [
+        "competitor-review-themes",
+        "pond-social-listening",
+        "review-pain-finder"
+      ],
+      "bm25_synonyms": [
+        "competitor-review-themes",
+        "review-pain-finder",
+        "pond-social-listening"
+      ],
+      "live": [],
+      "live_error": null
+    },
+    {
+      "query": "see the ads my competitors are running on linkedin",
+      "relevant": [
+        "competitor-ads-and-agencies"
+      ],
+      "bm25": [
+        "competitor-ads-and-agencies",
+        "seo-and-paid-ads",
+        "competitor-battlecards"
+      ],
+      "bm25_synonyms": [
+        "competitor-ads-and-agencies",
+        "seo-and-paid-ads",
+        "competitor-battlecards"
+      ],
+      "live": [],
+      "live_error": null
+    },
+    {
+      "query": "which of my target accounts are hiring AI engineers",
+      "relevant": [
+        "ai-hiring-at-targets"
+      ],
+      "bm25": [
+        "ai-hiring-at-targets",
+        "warm-intro-paths",
+        "ai-tech-zaozhidao"
+      ],
+      "bm25_synonyms": [
+        "ai-hiring-at-targets",
+        "warm-intro-paths",
+        "ai-tech-zaozhidao"
+      ],
+      "live": [],
+      "live_error": null
+    },
+    {
+      "query": "who should I meet at a conference next week",
+      "relevant": [
+        "event-meeting-planner"
+      ],
+      "bm25": [
+        "event-meeting-planner",
+        "crm-reminder",
+        "pond-lead-finder"
+      ],
+      "bm25_synonyms": [
+        "event-meeting-planner",
+        "crm-reminder",
+        "pond-lead-finder"
+      ],
+      "live": [],
+      "live_error": null
+    },
+    {
+      "query": "tell me when my old customers change jobs",
+      "relevant": [
+        "champion-moves"
+      ],
+      "bm25": [
+        "champion-moves",
+        "pond-social-listening",
+        "partner-overlap"
+      ],
+      "bm25_synonyms": [
+        "champion-moves",
+        "pond-social-listening",
+        "partner-overlap"
+      ],
+      "live": [],
+      "live_error": null
+    },
+    {
+      "query": "get a warm introduction to a target company",
+      "relevant": [
+        "warm-intro-paths"
+      ],
+      "bm25": [
+        "warm-intro-paths",
+        "ai-hiring-at-targets",
+        "storefront-fit-check"
+      ],
+      "bm25_synonyms": [
+        "warm-intro-paths",
+        "ai-hiring-at-targets",
+        "storefront-fit-check"
+      ],
+      "live": [],
+      "live_error": null
+    },
+    {
+      "query": "find CFO emails at series A startups",
+      "relevant": [
+        "executive-contact-finder"
+      ],
+      "bm25": [
+        "executive-contact-finder",
+        "yc-new-founder-early-finder",
+        "investor-match"
+      ],
+      "bm25_synonyms": [
+        "executive-contact-finder",
+        "yc-new-founder-early-finder",
+        "investor-match"
+      ],
+      "live": [],
+      "live_error": null
+    },
+    {
+      "query": "new YC founders",
+      "relevant": [
+        "yc-new-founder-early-finder"
+      ],
+      "bm25": [
+        "yc-new-founder-early-finder",
+        "champion-moves",
+        "pond-social-listening"
+      ],
+      "bm25_synonyms": [
+        "yc-new-founder-early-finder",
+        "champion-moves",
+        "pond-social-listening"
+      ],
+      "live": [
+        "yc-new-founder-early-finder"
+      ],
+      "live_error": null
+    },
+    {
+      "query": "monitor reddit and social media for mentions of my brand",
+      "relevant": [
+        "pond-social-listening"
+      ],
+      "bm25": [
+        "pond-social-listening",
+        "storefront-fit-check"
+      ],
+      "bm25_synonyms": [
+        "pond-social-listening",
+        "crm-reminder",
+        "ai-hiring-at-targets"
+      ],
+      "live": [],
+      "live_error": null
+    },
+    {
+      "query": "keyword research for SEO",
+      "relevant": [
+        "seo-and-paid-ads"
+      ],
+      "bm25": [
+        "seo-and-paid-ads",
+        "marketplace-partner-scout",
+        "pond-lead-finder"
+      ],
+      "bm25_synonyms": [
+        "seo-and-paid-ads",
+        "marketplace-partner-scout",
+        "pond-lead-finder"
+      ],
+      "live": [
+        "seo-and-paid-ads"
+      ],
+      "live_error": null
+    },
+    {
+      "query": "remind me to follow up with prospects",
+      "relevant": [
+        "crm-reminder"
+      ],
+      "bm25": [
+        "crm-reminder",
+        "pond-sales-assistant",
+        "pond-social-listening"
+      ],
+      "bm25_synonyms": [
+        "crm-reminder",
+        "pond-sales-assistant",
+        "pond-social-listening"
+      ],
+      "live": [],
+      "live_error": null
+    },
+    {
+      "query": "find leads for my business",
+      "relevant": [
+        "pond-lead-finder",
+        "pond-sales-assistant"
+      ],
+      "bm25": [
+        "pond-lead-finder",
+        "review-pain-finder",
+        "pond-sales-assistant"
+      ],
+      "bm25_synonyms": [
+        "pond-lead-finder",
+        "review-pain-finder",
+        "pond-sales-assistant"
+      ],
+      "live": [
+        "pond-lead-finder"
+      ],
+      "live_error": null
+    },
+    {
+      "query": "daily AI news briefing in slack",
+      "relevant": [
+        "ai-tech-zaozhidao"
+      ],
+      "bm25": [
+        "ai-tech-zaozhidao",
+        "ai-hiring-at-targets",
+        "pond-social-listening"
+      ],
+      "bm25_synonyms": [
+        "ai-tech-zaozhidao",
+        "ai-hiring-at-targets",
+        "pond-social-listening"
+      ],
+      "live": [
+        "ai-tech-zaozhidao"
+      ],
+      "live_error": null
+    },
+    {
+      "query": "check if a company uses shopify",
+      "relevant": [
+        "storefront-fit-check"
+      ],
+      "bm25": [
+        "marketplace-partner-scout",
+        "investor-match",
+        "partner-overlap"
+      ],
+      "bm25_synonyms": [
+        "storefront-fit-check",
+        "marketplace-partner-scout",
+        "investor-match"
+      ],
+      "live": [],
+      "live_error": null
+    },
+    {
+      "query": "enrich my spreadsheet of companies with missing fields",
+      "relevant": [
+        "company-details"
+      ],
+      "bm25": [
+        "company-details",
+        "competitor-battlecards",
+        "champion-moves"
+      ],
+      "bm25_synonyms": [
+        "company-details",
+        "competitor-battlecards",
+        "executive-contact-finder"
+      ],
+      "live": [],
+      "live_error": null
+    },
+    {
+      "query": "local restaurants with bad google reviews I could sell to",
+      "relevant": [
+        "review-pain-finder"
+      ],
+      "bm25": [
+        "review-pain-finder",
+        "partner-overlap",
+        "competitor-review-themes"
+      ],
+      "bm25_synonyms": [
+        "review-pain-finder",
+        "partner-overlap",
+        "competitor-review-themes"
+      ],
+      "live": [],
+      "live_error": null
+    }
+  ]
+}

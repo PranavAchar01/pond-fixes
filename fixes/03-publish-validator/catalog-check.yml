@@ -1,0 +1,19 @@
+# GitHub Actions job: block a publish when a catalog item needs a tool the
+# server does not have or names an unknown platform. Copy to .github/workflows/.
+name: catalog-check
+on:
+  pull_request:
+    paths: ["catalog/**", "packages/**"]
+  workflow_dispatch:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - name: Export catalog and tools/list from the build under test
+        run: |
+          # Replace with the build's own export step; the check reads data/catalog.txt and data/tools.txt.
+          ls data/catalog.txt data/tools.txt
+      - name: Validate
+        run: uv run python fixes/03-publish-validator/validate_catalog.py --format github

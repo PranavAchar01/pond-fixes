@@ -1,0 +1,22 @@
+[
+  {"q": "find investors for my seed round", "relevant": ["investor-match"]},
+  {"q": "investors", "relevant": ["investor-match"]},
+  {"q": "who should I pitch for my startup fundraise", "relevant": ["investor-match"]},
+  {"q": "battlecard", "relevant": ["competitor-battlecards"]},
+  {"q": "what do customers complain about in my competitor's reviews", "relevant": ["competitor-review-themes"]},
+  {"q": "see the ads my competitors are running on linkedin", "relevant": ["competitor-ads-and-agencies"]},
+  {"q": "which of my target accounts are hiring AI engineers", "relevant": ["ai-hiring-at-targets"]},
+  {"q": "who should I meet at a conference next week", "relevant": ["event-meeting-planner"]},
+  {"q": "tell me when my old customers change jobs", "relevant": ["champion-moves"]},
+  {"q": "get a warm introduction to a target company", "relevant": ["warm-intro-paths"]},
+  {"q": "find CFO emails at series A startups", "relevant": ["executive-contact-finder"]},
+  {"q": "new YC founders", "relevant": ["yc-new-founder-early-finder"]},
+  {"q": "monitor reddit and social media for mentions of my brand", "relevant": ["pond-social-listening"]},
+  {"q": "keyword research for SEO", "relevant": ["seo-and-paid-ads"]},
+  {"q": "remind me to follow up with prospects", "relevant": ["crm-reminder"]},
+  {"q": "find leads for my business", "relevant": ["pond-lead-finder", "pond-sales-assistant"]},
+  {"q": "daily AI news briefing in slack", "relevant": ["ai-tech-zaozhidao"]},
+  {"q": "check if a company uses shopify", "relevant": ["storefront-fit-check"]},
+  {"q": "enrich my spreadsheet of companies with missing fields", "relevant": ["company-details"]},
+  {"q": "local restaurants with bad google reviews I could sell to", "relevant": ["review-pain-finder"]}
+]

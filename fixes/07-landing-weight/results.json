@@ -1,0 +1,57 @@
+{
+  "entry": "index-BbtYghut.js",
+  "static_first_load": {
+    "files": 73,
+    "raw": 1156469,
+    "gzip": 378221,
+    "brotli": 327981
+  },
+  "landing_route_lazy_chunk": "routes-PvcBNCWd.js",
+  "landing_total_js": {
+    "files": 88,
+    "raw": 1413699,
+    "gzip": 473459,
+    "brotli": 409059
+  },
+  "landing_total_css": {
+    "files": 1,
+    "raw": 265348,
+    "gzip": 43973,
+    "brotli": 34816
+  },
+  "posthog_chunks_on_landing": {
+    "names": [
+      "track-DKHn3SyZ.js"
+    ],
+    "files": 1,
+    "raw": 282145,
+    "gzip": 92065,
+    "brotli": 78442
+  },
+  "modulepreload_count": 72,
+  "css": [
+    {
+      "file": "index-u1-B8PNS.css",
+      "raw": 265348,
+      "gzip": 43973
+    }
+  ],
+  "chunks_with_wallet_markers": [
+    {
+      "chunk": "index-BbtYghut.js",
+      "raw": 469747,
+      "gzip": 140107,
+      "markers": {
+        "privy": 1,
+        "walletconnect": 1,
+        "crypto-deposit": 1
+      }
+    }
+  ],
+  "chunks_with_wallet_markers_raw": 469747,
+  "chunks_with_wallet_markers_gzip": 140107,
+  "wallet_named_chunks_raw": 0,
+  "wallet_named_chunks_gzip": 0,
+  "media_in_index_html": [],
+  "compression_note": "gzip -9 and brotli -q11 computed locally on the mirror files; joinpond.ai served gzip to an Accept-Encoding: br, gzip request (see headers.json)."
+}

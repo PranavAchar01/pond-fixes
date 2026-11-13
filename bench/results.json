@@ -1,0 +1,97 @@
+{
+  "server": "https://joinpond.ai/mcp",
+  "started_at": "2026-11-13T00:17:27+00:00",
+  "method": "N=15 sequential calls per tool, 1.0s apart, one client on the author's machine; wall time from request send to full body read (includes TLS reuse effects of urllib, which opens a new connection per request).",
+  "initialize": {
+    "status": 200,
+    "returns_mcp_session_id": false,
+    "seconds": 0.159
+  },
+  "latency": {
+    "pond_current_user": {
+      "n": 15,
+      "p50_ms": 219.1,
+      "p95_ms": 516.4,
+      "min_ms": 130.0,
+      "max_ms": 516.4,
+      "errors": 0,
+      "body_bytes_median": 1825,
+      "measured_at": "2026-11-13T00:17:45+00:00"
+    },
+    "pas_catalog_search": {
+      "n": 15,
+      "p50_ms": 196.3,
+      "p95_ms": 333.2,
+      "min_ms": 146.0,
+      "max_ms": 333.2,
+      "errors": 0,
+      "body_bytes_median": 15206,
+      "measured_at": "2026-11-13T00:18:02+00:00"
+    },
+    "pas_capabilities": {
+      "n": 15,
+      "p50_ms": 159.2,
+      "p95_ms": 301.4,
+      "min_ms": 127.3,
+      "max_ms": 301.4,
+      "errors": 0,
+      "body_bytes_median": 4702,
+      "measured_at": "2026-11-13T00:18:19+00:00"
+    },
+    "tools/list": {
+      "n": 15,
+      "p50_ms": 367.1,
+      "p95_ms": 1124.9,
+      "min_ms": 160.9,
+      "max_ms": 1124.9,
+      "errors": 0,
+      "body_bytes_median": 359514,
+      "measured_at": "2026-11-13T00:18:39+00:00"
+    },
+    "pond_recent_updates": {
+      "n": 15,
+      "p50_ms": 212.0,
+      "p95_ms": 281.4,
+      "min_ms": 120.1,
+      "max_ms": 281.4,
+      "errors": 0,
+      "body_bytes_median": 166,
+      "measured_at": "2026-11-13T00:18:57+00:00",
+      "items_returned": 0,
+      "response_text_if_short": "{\"updates\":[],\"next_cursor\":null}"
+    }
+  },
+  "tools_list": {
+    "tool_count": 89,
+    "by_accept_encoding": {
+      "identity": {
+        "accept_encoding_sent": null,
+        "content_encoding_received": null,
+        "wire_bytes": 359514,
+        "decoded_bytes": 359514,
+        "measured_at": "2026-11-13T00:18:57+00:00"
+      },
+      "gzip": {
+        "accept_encoding_sent": "gzip",
+        "content_encoding_received": "gzip",
+        "wire_bytes": 46801,
+        "decoded_bytes": 359514,
+        "measured_at": "2026-11-13T00:18:57+00:00"
+      },
+      "br": {
+        "accept_encoding_sent": "br",
+        "content_encoding_received": null,
+        "wire_bytes": 359514,
+        "decoded_bytes": 359514,
+        "measured_at": "2026-11-13T00:18:57+00:00"
+      }
+    },
+    "server_compresses": true,
+    "result_chars_compact": 358793,
+    "description_chars": 51451,
+    "input_schema_chars": 83814,
+    "estimated_tokens": 89698,
+    "estimated_tokens_formula": "ESTIMATE: characters / 4 of the compact JSON result object"
+  },
+  "finished_at": "2026-11-13T00:18:57+00:00"
+}

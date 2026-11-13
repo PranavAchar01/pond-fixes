@@ -1,0 +1,88 @@
+{
+  "source": "data/tools_list.json (tools/list result, captured by bench/measure.py)",
+  "tool_count": 89,
+  "bytes_before": 358793,
+  "bytes_after_descriptions": 334094,
+  "bytes_after_descriptions_and_output_schema": 125637,
+  "description_chars_before": 51451,
+  "description_chars_after": 26782,
+  "output_schema_bytes": 207161,
+  "tools_with_text_moved": 25,
+  "skill_file_bytes": 27011,
+  "estimated_tokens_before": 89698,
+  "estimated_tokens_after_descriptions": 83523,
+  "estimated_tokens_after_both": 31409,
+  "tokens_formula": "ESTIMATE: chars / 4 of the compact JSON",
+  "top10": [
+    {
+      "name": "pond_scrape_start",
+      "bytes": 22260,
+      "description": 9083,
+      "inputSchema": 12255,
+      "outputSchema": 719
+    },
+    {
+      "name": "pas_install_report",
+      "bytes": 13264,
+      "description": 160,
+      "inputSchema": 6235,
+      "outputSchema": 6687
+    },
+    {
+      "name": "pas_catalog_view",
+      "bytes": 12774,
+      "description": 82,
+      "inputSchema": 774,
+      "outputSchema": 11739
+    },
+    {
+      "name": "pond_workflow_update",
+      "bytes": 12256,
+      "description": 4236,
+      "inputSchema": 4181,
+      "outputSchema": 3648
+    },
+    {
+      "name": "pas_install_prepare",
+      "bytes": 11811,
+      "description": 112,
+      "inputSchema": 2186,
+      "outputSchema": 9330
+    },
+    {
+      "name": "pond_workflow_draft",
+      "bytes": 10656,
+      "description": 3119,
+      "inputSchema": 3701,
+      "outputSchema": 3648
+    },
+    {
+      "name": "pas_install_status",
+      "bytes": 10475,
+      "description": 114,
+      "inputSchema": 591,
+      "outputSchema": 9589
+    },
+    {
+      "name": "pond_enrich",
+      "bytes": 10018,
+      "description": 1115,
+      "inputSchema": 8149,
+      "outputSchema": 579
+    },
+    {
+      "name": "pas_install_prepare_batch",
+      "bytes": 9547,
+      "description": 113,
+      "inputSchema": 2335,
+      "outputSchema": 6910
+    },
+    {
+      "name": "pond_investors",
+      "bytes": 9054,
+      "description": 2543,
+      "inputSchema": 1703,
+      "outputSchema": 4631
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "per_session_tokens_saved_descriptions": {
+    "value": 6175,
+    "formula": "(tools/list compact chars before - after moving description text to a skill) / 4",
+    "source": "fixes/05-tool-list-diet/results.json"
+  },
+  "per_session_tokens_saved_with_output_schema": {
+    "value": 58289,
+    "formula": "same, also dropping outputSchema; counts only for clients that put outputSchema in context",
+    "source": "fixes/05-tool-list-diet/results.json"
+  },
+  "per_workflow_build_tokens_saved": {
+    "value": 33179,
+    "formula": "(export response bytes today - with signed URL) / 4 x 1 export per build (observed)",
+    "source": "fixes/06-export-by-url/results.json"
+  },
+  "landing_first_load_bytes_saved_gzip": {
+    "value": 92065,
+    "formula": "gzip -9 size of the PostHog chunk, moved off the first load",
+    "source": "fixes/07-landing-weight/results.json"
+  },
+  "landing_bytes_saved_by_brotli": {
+    "value": 73557,
+    "formula": "landing JS+CSS gzip -9 minus brotli -q11, both computed locally",
+    "source": "fixes/07-landing-weight/results.json"
+  },
+  "search_top3_rate": {
+    "before": 0.35,
+    "after": 0.95,
+    "zero_result_queries_before": 13,
+    "source": "fixes/02-catalog-search/results.json (20 queries)"
+  },
+  "minutes_saved_per_stuck_run": {
+    "value": 10.27,
+    "formula": "(20 min 16 s observed - 10 min budget) / 60",
+    "source": "observation 2026-11-12; formula in fixes/09-scrape-watchdog/watchdog.py"
+  },
+  "tools_list_wire_bytes": {
+    "identity": 359514,
+    "gzip": 46801,
+    "source": "bench/results.json"
+  }
+}

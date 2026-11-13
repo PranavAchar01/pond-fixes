@@ -1,0 +1,178 @@
+{
+ "pas_catalog_search": {
+  "additionalProperties": false,
+  "properties": {
+   "cursor": {
+    "maxLength": 512,
+    "type": "string"
+   },
+   "filters": {
+    "additionalProperties": {
+     "items": {
+      "maxLength": 200,
+      "minLength": 1,
+      "pattern": "^\\S(?:.*\\S)?$",
+      "type": "string"
+     },
+     "maxItems": 100,
+     "type": "array"
+    },
+    "maxProperties": 100,
+    "propertyNames": {
+     "maxLength": 100,
+     "minLength": 1,
+     "pattern": "^\\S(?:.*\\S)?$"
+    },
+    "type": "object"
+   },
+   "limit": {
+    "maximum": 100,
+    "minimum": 1,
+    "type": "integer"
+   },
+   "query": {
+    "maxLength": 500,
+    "pattern": "^(?:|\\S(?:.*\\S)?)$",
+    "type": "string"
+   },
+   "requestId": {
+    "maxLength": 200,
+    "minLength": 1,
+    "type": "string"
+   }
+  },
+  "required": [
+   "requestId"
+  ],
+  "type": "object"
+ },
+ "pas_capabilities": {
+  "additionalProperties": false,
+  "properties": {
+   "requestId": {
+    "maxLength": 200,
+    "minLength": 1,
+    "type": "string"
+   }
+  },
+  "required": [
+   "requestId"
+  ],
+  "type": "object"
+ },
+ "pond_scrape_status": {
+  "additionalProperties": false,
+  "oneOf": [
+   {
+    "not": {
+     "required": [
+      "watch_id"
+     ]
+    },
+    "required": [
+     "run_id"
+    ]
+   },
+   {
+    "not": {
+     "required": [
+      "run_id"
+     ]
+    },
+    "required": [
+     "watch_id"
+    ]
+   }
+  ],
+  "properties": {
+   "cursor": {
+    "description": "The cursor from the previous page of this run's items.",
+    "maxLength": 512,
+    "type": "string"
+   },
+   "run_id": {
+    "description": "The run_id returned by pond_scrape_start or listed with a watch.",
+    "pattern": "^sr_[0-9a-f]{24}$",
+    "type": "string"
+   },
+   "watch_id": {
+    "description": "A watch_id, to check the latest run of that watch.",
+    "pattern": "^sw_[0-9a-f]{24}$",
+    "type": "string"
+   }
+  },
+  "required": [],
+  "type": "object"
+ },
+ "pond_recent_updates": {
+  "additionalProperties": false,
+  "properties": {
+   "cursor": {
+    "maxLength": 2000,
+    "type": "string"
+   },
+   "kinds": {
+    "items": {
+     "enum": [
+      "pas_update",
+      "dataset_update",
+      "customer_story",
+      "official_announcement"
+     ],
+     "type": "string"
+    },
+    "maxItems": 4,
+    "type": "array",
+    "uniqueItems": true
+   },
+   "limit": {
+    "maximum": 100,
+    "minimum": 1,
+    "type": "integer"
+   }
+  },
+  "required": [],
+  "type": "object"
+ },
+ "pond_watch_list": {
+  "additionalProperties": false,
+  "properties": {
+   "cursor": {
+    "description": "The cursor from the previous page.",
+    "maxLength": 512,
+    "type": "string"
+   },
+   "include_organization": {
+    "default": false,
+    "description": "Also list watches teammates shared with your Organization.",
+    "type": "boolean"
+   },
+   "label": {
+    "description": "Only watches started with exactly this label: lowercase letters, digits and hyphens, for example social-listening; used to keep one workflow's watches apart.",
+    "maxLength": 64,
+    "pattern": "^[a-z0-9][a-z0-9-]{0,63}$",
+    "type": "string"
+   },
+   "limit": {
+    "default": 20,
+    "description": "Watches per page.",
+    "maximum": 50,
+    "minimum": 1,
+    "type": "integer"
+   },
+   "status": {
+    "default": "active",
+    "description": "Only watches with this status; all lists every status.",
+    "enum": [
+     "active",
+     "expired",
+     "stopped",
+     "all"
+    ],
+    "type": "string"
+   }
+  },
+  "required": [],
+  "type": "object"
+ }
+}

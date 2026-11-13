@@ -1,0 +1,15 @@
+{
+  "source": "data/export.out (pond_workflow_export on pw_1058be43f6482ca64fa86b7d, 2026-11-12)",
+  "export_out_file_bytes": 140264,
+  "response_json_bytes_today": 140226,
+  "package_base64_chars": 133104,
+  "package_bytes_declared": 99828,
+  "response_json_bytes_with_url": 7510,
+  "bytes_saved_per_export": 132716,
+  "share_of_response_that_is_base64": 0.949,
+  "estimated_tokens_today": 35056,
+  "estimated_tokens_with_url": 1877,
+  "estimated_tokens_saved_per_export": 33179,
+  "tokens_formula": "ESTIMATE: bytes / 4. Base64 tokenizes worse than prose, so this likely undercounts.",
+  "exports_per_build_observed": 1
+}

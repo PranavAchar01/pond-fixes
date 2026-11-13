@@ -1,0 +1,127 @@
+{
+  "measured_at": "2026-11-13T00:19:44+00:00",
+  "accept_encoding_sent": "br, gzip",
+  "results": {
+    "/": {
+      "status": 200,
+      "content-type": "text/html; charset=utf-8",
+      "content-length": null,
+      "content-encoding": "gzip",
+      "cache-control": "no-cache",
+      "cf-cache-status": "DYNAMIC",
+      "age": null,
+      "server": "cloudflare",
+      "vary": null
+    },
+    "/assets/index-BbtYghut.js": {
+      "status": 200,
+      "content-type": "text/javascript; charset=utf-8",
+      "content-length": null,
+      "content-encoding": "gzip",
+      "cache-control": "public, max-age=31536000, immutable",
+      "cf-cache-status": "HIT",
+      "age": "26032",
+      "server": "cloudflare",
+      "vary": null
+    },
+    "/assets/track-DKHn3SyZ.js": {
+      "status": 200,
+      "content-type": "text/javascript; charset=utf-8",
+      "content-length": null,
+      "content-encoding": "gzip",
+      "cache-control": "public, max-age=31536000, immutable",
+      "cf-cache-status": "HIT",
+      "age": "126744",
+      "server": "cloudflare",
+      "vary": null
+    },
+    "/assets/routes-PvcBNCWd.js": {
+      "status": 200,
+      "content-type": "text/javascript; charset=utf-8",
+      "content-length": null,
+      "content-encoding": "gzip",
+      "cache-control": "public, max-age=31536000, immutable",
+      "cf-cache-status": "HIT",
+      "age": "33819",
+      "server": "cloudflare",
+      "vary": null
+    },
+    "/assets/ClosingSection-p5k3UqqF.js": {
+      "status": 200,
+      "content-type": "text/javascript; charset=utf-8",
+      "content-length": null,
+      "content-encoding": "gzip",
+      "cache-control": "public, max-age=31536000, immutable",
+      "cf-cache-status": "HIT",
+      "age": "33819",
+      "server": "cloudflare",
+      "vary": null
+    },
+    "/assets/index-u1-B8PNS.css": {
+      "status": 200,
+      "content-type": "text/css; charset=utf-8",
+      "content-length": null,
+      "content-encoding": "gzip",
+      "cache-control": "public, max-age=31536000, immutable",
+      "cf-cache-status": "HIT",
+      "age": "16774",
+      "server": "cloudflare",
+      "vary": null
+    },
+    "/images/landing-page-202610/video/pond-100notext.webm": {
+      "status": 200,
+      "content-type": "video/webm",
+      "content-length": "6489523",
+      "content-encoding": null,
+      "cache-control": "public, max-age=86400",
+      "cf-cache-status": "REVALIDATED",
+      "age": null,
+      "server": "cloudflare",
+      "vary": null
+    },
+    "/images/landing-page-202610/video/pond-100notext.mp4": {
+      "status": 200,
+      "content-type": "video/mp4",
+      "content-length": "9361133",
+      "content-encoding": null,
+      "cache-control": "public, max-age=86400",
+      "cf-cache-status": "HIT",
+      "age": "1769",
+      "server": "cloudflare",
+      "vary": null
+    },
+    "/images/landing-page-202610/video/pond-100notext-baked.mp4": {
+      "status": 200,
+      "content-type": "video/mp4",
+      "content-length": "9755300",
+      "content-encoding": null,
+      "cache-control": "public, max-age=86400",
+      "cf-cache-status": "HIT",
+      "age": "3418",
+      "server": "cloudflare",
+      "vary": null
+    },
+    "/images/landing-page-202610/video/pond-100notext-baked-sm.mp4": {
+      "status": 200,
+      "content-type": "video/mp4",
+      "content-length": "1837884",
+      "content-encoding": null,
+      "cache-control": "public, max-age=86400",
+      "cf-cache-status": "HIT",
+      "age": "72707",
+      "server": "cloudflare",
+      "vary": null
+    },
+    "/images/landing-page-202610/video/pond-connect-intro.webm": {
+      "status": 200,
+      "content-type": "video/webm",
+      "content-length": "333892",
+      "content-encoding": null,
+      "cache-control": "public, max-age=86400",
+      "cf-cache-status": "HIT",
+      "age": "36446",
+      "server": "cloudflare",
+      "vary": null
+    }
+  }
+}
